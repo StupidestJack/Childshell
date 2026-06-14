@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -60,6 +60,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "影片";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(375, 32);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "【猛男版】新寶島";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button7);
@@ -72,6 +82,36 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "音樂";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(6, 100);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(375, 32);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "半生雪 (線上)";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 62);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(375, 32);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Fluffing a Duck";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(375, 32);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Local Forecast";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox3
             // 
@@ -86,6 +126,14 @@
             this.groupBox3.Text = "遊戲";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.TabIndex = 7;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(6, 24);
@@ -95,36 +143,6 @@
             this.button1.Text = "踩地雷";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(6, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(375, 32);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "【猛男版】新寶島";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(375, 32);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Local Forecast";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(6, 62);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(375, 32);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Fluffing a Duck";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -144,14 +162,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Local Forecast、Fluffing a Duck：Kevin MacLeod (CC 4.0)";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
-            this.label3.TabIndex = 7;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button6);
@@ -164,6 +174,16 @@
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "文件";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 62);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(375, 32);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "三字經";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label4
             // 
@@ -182,26 +202,6 @@
             this.button5.Text = "弟子規";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(6, 62);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(375, 32);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "三字經";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(6, 100);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(375, 32);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "半生雪 (線上)";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Entertainment
             // 

@@ -9,11 +9,12 @@ namespace ChildShell
     {
         public WebView2 webView;
 
-        public Browser()
+        public Browser(string _url = "https://www.bing.com")
         {
             InitializeComponent();
+            url = _url;
         }
-
+        string url = "";
         private async void Browser_Load(object sender, EventArgs e)
         {
             webView = new WebView2
@@ -27,7 +28,7 @@ namespace ChildShell
             await webView.EnsureCoreWebView2Async(null);
 
             webView.CoreWebView2.NavigationCompleted += CoreWebView2_NavigationCompleted;
-            webView.CoreWebView2.Navigate("https://www.bing.com");
+            webView.CoreWebView2.Navigate(url);
         }
 
         // 初始化完成後要執行的事件

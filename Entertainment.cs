@@ -55,7 +55,7 @@ namespace ChildShell
         private void button7_Click(object sender, EventArgs e)
         {
             //https://music.youtube.com/watch?v=Y1VKKboWu-8
-            System.Diagnostics.Process.Start("https://music.youtube.com/watch?v=Y1VKKboWu-8");
+            new Browser("https://music.youtube.com/watch?v=Y1VKKboWu-8").Show();
         }
     }
 }
