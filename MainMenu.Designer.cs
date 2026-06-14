@@ -40,6 +40,22 @@
             button9 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // button9
+            // 
+            button9.BackColor = System.Drawing.Color.LightCoral;
+            button9.BackgroundImage = global::ChildShell.Properties.Resources.internet;
+            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button9.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            button9.ForeColor = System.Drawing.Color.Black;
+            button9.Location = new System.Drawing.Point(146, 12);
+            button9.Name = "button9";
+            button9.Size = new System.Drawing.Size(128, 128);
+            button9.TabIndex = 6;
+            button9.Text = "瀏覽器";
+            button9.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -66,22 +82,6 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button9
-            // 
-            button9.BackColor = System.Drawing.Color.LightCoral;
-            button9.BackgroundImage = global::ChildShell.Properties.Resources.internet;
-            button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            button9.ForeColor = System.Drawing.Color.Black;
-            button9.Location = new System.Drawing.Point(146, 12);
-            button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(128, 128);
-            button9.TabIndex = 6;
-            button9.Text = "瀏覽器";
-            button9.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
@@ -195,10 +195,14 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainMenu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "主畫面";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenu_FormClosed);
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 
         }

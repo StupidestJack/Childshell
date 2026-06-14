@@ -19,7 +19,6 @@ namespace ChildShell
 
         private void button10_Click(object sender, EventArgs e)
         {
-            new Lock().Show();
             this.Close();
         }
 
@@ -61,6 +60,16 @@ namespace ChildShell
         private void button5_Click(object sender, EventArgs e)
         {
             new Notepad().Show();
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            new Lock().Show();
         }
     }
 }

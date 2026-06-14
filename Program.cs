@@ -13,9 +13,9 @@ namespace ChildShell
         /// </summary>
         /// 
 
-        public static string shellversion = "3.0";
-        public static int shellbuild = 14;
-        public static string progress = "Release";
+        public static string shellversion = "4.0";
+        public static int shellbuild = 20;
+        public static string progress = "Under Construction";
         [STAThread]        
         static void Main()
         {

@@ -17,10 +17,12 @@ namespace ChildShell
             InitializeComponent();
         }
         int tick = 0;
+        bool closeFlag = false;
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             if (hScrollBar1.Value >= 90)
             {
+                closeFlag = true;
                 new MainMenu().Show();
                 this.Close();
             }
@@ -61,6 +63,16 @@ namespace ChildShell
                     鎖.ForeColor = Color.White;
                     break;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void Lock_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!closeFlag) e.Cancel = true;
         }
     }
 }

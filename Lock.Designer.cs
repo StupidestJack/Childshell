@@ -74,6 +74,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "關機";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // hScrollBar1
             // 
@@ -182,6 +183,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "鎖定畫面";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lock_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
