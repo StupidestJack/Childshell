@@ -1,6 +1,8 @@
-﻿namespace ChildShell
+﻿using System.Windows.Forms;
+
+namespace ChildShell
 {
-    partial class Entertainment
+    partial class Entertainment : Form
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,8 @@
-﻿namespace ChildShell
+﻿using System.Windows.Forms;
+
+namespace ChildShell
 {
-    partial class Looper
+    partial class Looper : Form
     {
         /// <summary>
         /// Required designer variable.

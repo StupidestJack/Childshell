@@ -1,6 +1,8 @@
-﻿namespace ChildShell
+﻿using System.Windows.Forms;
+
+namespace ChildShell
 {
-    partial class Lock
+    partial class Lock : Form
     {
         /// <summary>
         /// 設計工具所需的變數。

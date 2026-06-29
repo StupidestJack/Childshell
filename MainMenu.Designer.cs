@@ -1,6 +1,8 @@
-﻿namespace ChildShell
+﻿using System.Windows.Forms;
+
+namespace ChildShell
 {
-    partial class MainMenu
+    partial class MainMenu : Form
     {
         /// <summary>
         /// Required designer variable.
